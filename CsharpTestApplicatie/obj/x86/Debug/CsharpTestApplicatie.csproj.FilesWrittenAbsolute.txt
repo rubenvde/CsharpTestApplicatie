@@ -1,0 +1,5 @@
+/Users/rubenvde/Projects/CsharpTestApplicatie/CsharpTestApplicatie/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/rubenvde/Projects/CsharpTestApplicatie/CsharpTestApplicatie/bin/Debug/CsharpTestApplicatie.exe.mdb
+/Users/rubenvde/Projects/CsharpTestApplicatie/CsharpTestApplicatie/bin/Debug/CsharpTestApplicatie.exe
+/Users/rubenvde/Projects/CsharpTestApplicatie/CsharpTestApplicatie/obj/x86/Debug/CsharpTestApplicatie.exe
+/Users/rubenvde/Projects/CsharpTestApplicatie/CsharpTestApplicatie/obj/x86/Debug/CsharpTestApplicatie.exe.mdb

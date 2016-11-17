@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{52CC26D6-1669-4528-9963-ED469C880D4B}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CsharpTestApplicatie/Question.cs">
+    <Files>
+      <File FileName="CsharpTestApplicatie/Program.cs" Line="9" Column="44" />
+      <File FileName="CsharpTestApplicatie/ChoiceQuestion.cs" Line="22" Column="5" />
+      <File FileName="CsharpTestApplicatie/Question.cs" Line="6" Column="3" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.CsharpTestApplicatie PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+</Properties>
