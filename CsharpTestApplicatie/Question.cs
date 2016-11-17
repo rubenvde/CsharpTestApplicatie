@@ -3,14 +3,8 @@ namespace CsharpTestApplicatie
 {
 	public class Question
 	{
-		public String Text { get; set; }
-		public String Answer { get; set; }
-
-		public Question()
-		{
-			Text = "";
-			Answer = "";
-		}
+        public String Text { get; set; } = string.Empty;
+        public virtual String Answer { get; set; } = string.Empty;
 
 		public bool CheckAnswer(String response)
 		{
