@@ -5,33 +5,39 @@ namespace CsharpTestApplicatie
 {
 	public class ChoiceQuestion : Question
 	{
-		public List<string> choices { get; set; }
+        private static int FindIndex<T,U>(Dictionary<T,U> d, Predicate<KeyValuePair<T,U>> p)
+        {
+            int i = 0;
+            foreach(var pair in d)
+            {
+                if (p(pair)) return i;
+                i++;
+            }
+            return -1;
+        }
+        public Dictionary<string, bool> Choices { get; set; } = new Dictionary<string, bool>();
 
-		public ChoiceQuestion()
-		{
-			choices = new List<string>();
-		}
+        public override string Answer
+        {
+            get { return (1 + FindIndex(Choices, pair => pair.Value)).ToString(); }
+            set { throw new NotSupportedException("you can't set an answer this way"); }
+        }
 
-		public void AddChoice(String choice, bool correct)
+        public void AddChoice(String choice, bool correct)
 		{
-			choices.Add(choice); 
-			if (correct)
-			{
-				// Convert choices.size() to string
-				String choiceString = "" + choices.Count; 
-				Answer = choiceString;
-			}
+			Choices.Add(choice, correct);
 		}
 
 		override public void Display()
 		{
 			// Display the question text 
 			base.Display();
-			// Display the answer choices
-			for (int i = 0; i < choices.Count; i++)
+            // Display the answer choices
+            int i = 1;
+			foreach(var choise in Choices)
 			{
-				int choiceNumber = i + 1;
-				Console.WriteLine(choiceNumber + ": " + choices[i]);
+				Console.WriteLine($"{i} : {choise.Key}");
+                i++;
 			}
 		}
 

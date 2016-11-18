@@ -17,14 +17,18 @@ namespace CsharpTestApplicatie
 			};
 			*/
 
-			ChoiceQuestion first = new ChoiceQuestion()
+			var first = new ChoiceQuestion()
 			{
-				Text = "What was the original name of the Java language?"
+				Text = "What was the original name of the Java language?",
+                Choices =
+                {
+                    {"*7", false },
+                    {"Duke", false },
+                    {"Oak", true },
+                    {"Gosling", false }
+
+                }
 			};
-			first.AddChoice("*7", false);
-			first.AddChoice("Duke", false);
-			first.AddChoice("Oak", true);
-			first.AddChoice("Gosling", false);
 
 
 			ChoiceQuestion second = new ChoiceQuestion()
@@ -44,7 +48,7 @@ namespace CsharpTestApplicatie
 		public static void PresentQuestion(ChoiceQuestion q)
 		{
 			q.Display();
-			Console.WriteLine("Your answer: ");
+			Console.Write("Your answer: \t");
 			String response = Console.ReadLine();
 			Console.WriteLine(q.CheckAnswer(response));
 		}
